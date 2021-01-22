@@ -72,7 +72,6 @@ function Cards(){
                 setDealerTotal(dealerTotal + Number(convertCards(data.cards[0].value)))
             })
         }
-
     };
 
     //Når brukeren så ber om å se dealerens kort, kjører funksjonen som gir ulike resultater basert på om bruker eller dealer har høyest verdi på hånden, eller om bruker har oversteget 21.
@@ -149,83 +148,3 @@ function Cards(){
 };
 
 export default Cards
-
-/**if(data.cards[0].value === "QUEEN" || data.cards[0].value === "KING" || data.cards[0].value === "JACK"){
-                setPlayerTotal(10)
-            }
-            
-            
-
-            if(data.cards[1].value === "QUEEN" || data.cards[1].value === "KING" || data.cards[1].value === "JACK"){
-                setPlayerTotal(10)
-            }
-
-            
-            
-            else {
-                setPlayerTotal(Number(data.cards[0].value) + Number(data.cards[1].value))
-            } */
-
-            /**let sum = playerCards.map(i => {
-            return i.value
-            }) 
-    
-        setPlayerTotal(sum)  */
-
-        /**function convertValues(cardValue) {
-        if(cardValue === "ACE"){
-            return 1;
-        } else if (cardValue === "KING", "QUEEN", "JACK") {
-            return 10;
-        } else {
-            return cardValue
-        }
-    }
-
-    function testValues() {
-        const player = convertValues(playerCards)
-        const dealer = convertValues(dealerCards)
-        console.log(player)
-        console.log(dealer)
-    } */
-
-    /**if(data.cards[0].value === NaN){
-            setPlayerTotal(prevPlayerTotal => [Number(...prevPlayerTotal) + 10])
-        } else if (data.cards[0].value === "ACE"){
-            setPlayerTotal((prevPlayerTotal => [Number(...prevPlayerTotal) + 1]))
-        } else {
-            setPlayerTotal(prevPlayerTotal => [Number(...prevPlayerTotal) + Number(data.cards[0].value)])
-        }
-
-        if(data.cards[1].value === NaN){
-            sePlayerTotal(prevPlayerTotal => [Number(...prevPlayerTotal) + 10])
-        } else if (data.cards[1].value === "ACE"){
-            setPlayerTotal((prevPlayerTotal => [Number(...prevPlayerTotal) + 1]))
-        } else {
-            setPlayerTotal(prevPlayerTotal => [Number(...prevPlayerTotal) + Number(data.cards[1].value)])
-        }
-
-        if(data.cards[2].value === NaN){
-            setDealerTotal(prevDealerTotal => [Number(...prevDealerTotal) + 10])
-        } else if (data.cards[2].value === "ACE"){
-            setDealerTotal((prevDealerTotal => [Number(...prevDealerTotal) + 1]))
-        } else {
-            setDealerTotal(prevDealerTotal => [Number(...prevDealerTotal) + Number(data.cards[2].value)])
-        }
-
-        if(data.cards[3].value === NaN){
-            setDealerTotal(prevDealerTotal => [Number(...prevDealerTotal) + 10])
-        } else if (data.cards[3].value === "ACE"){
-            setDealerTotal((prevDealerTotal => [Number(...prevDealerTotal) + 1]))
-        } else {
-            setDealerTotal(prevDealerTotal => [Number(...prevDealerTotal) + Number(data.cards[3].value)])
-        } */
-
-        /*if(data.cards[0].value === "QUEEN" || data.cards[0].value === "KING" || data.cards[0].value === "JACK"){
-                    setDealerTotal(prevDealerTotal => [Number(...prevDealerTotal) + 10])
-                } else if (data.cards[0].value === "ACE"){
-                    setDealerTotal((prevDealerTotal => [Number(...prevDealerTotal) + 1]))
-                } else {
-                    setDealerTotal(prevDealerTotal => [Number(...prevDealerTotal) + Number(data.cards[0].value)])
-                }
-            setDealerCards(prevDealerCards => [...prevDealerCards, data.cards[0]]) */
